@@ -3,7 +3,7 @@ services:
   sever:
     image: 'jc21/nginx-proxy-manager:latest'
     restart: unless-stopped
-    container_name: scratch
+    container_name: sever
     ports:
       - '80:80'
       - '81:81'
