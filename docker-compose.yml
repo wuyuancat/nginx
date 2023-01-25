@@ -14,4 +14,6 @@ services:
 
 volumes:
   data:
-    size: 5Gi
+    size: 4Gi
+  letsencrypt:
+    size: 1Gi
