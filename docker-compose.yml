@@ -3,6 +3,7 @@ services:
   app:
     image: 'jc21/nginx-proxy-manager:latest'
     restart: unless-stopped
+    container_name: scratch
     ports:
       - '80:80'
       - '81:81'
@@ -10,3 +11,7 @@ services:
     volumes:
       - ./data:/data
       - ./letsencrypt:/etc/letsencrypt
+
+volumes:
+  data:
+    size: 5Gi
